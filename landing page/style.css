@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F8FE;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+}
+
+.landing-page__nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.landing-page__user-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+}
+
+.landing-page__user-actions__sign-up-btn {
+    background-image: linear-gradient(90deg, rgba(255, 115, 135, 1) 0%, rgba(237, 157, 126, 1) 100%);
+    color: #fff;
+    padding: .6rem 1.5rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.landing-page__hero {
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.landing-page__hero img {
+    width: 100%;
+    height: auto;
+}
+
+.landing-page__hero a {
+    color: #fff;
+}
+
+.landing-page__hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 139, .3);
+    padding: 2rem;
+}
+
+.landing-page__hero-text h1 {
+    font-size: 2rem;
+}
+
+.landing-page__hero-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.landing-page__hero__shop-now-btn {
+    background-image: linear-gradient(90deg, rgba(255, 115, 135, 1) 0%, rgba(237, 157, 126, 1) 100%);;
+    color: #fff;
+    padding: .6rem 1.5rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.landing-page__main-item {
+    background-color: #fff;
+    margin: 5rem .5rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+}
+
+.landing-page__main-item h2 {
+    font-size: 1.7rem;
+}
+
+.landing-page__main-item p {
+    margin: 1rem 0 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .7rem;
+}
+
+.landing-page__main-item a {
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: .5rem 2rem;
+}
+
+.landing-page__main-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 3rem 0;
+}
