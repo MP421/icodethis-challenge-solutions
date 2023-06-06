@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F5F7FB;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2.5rem 2rem;
+    line-height: 1.5;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, .1);
+}
+
+.new-message__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-message__head p {
+    font-weight: bold;
+}
+
+.new-message__head i {
+    cursor: pointer;
+}
+
+.new-message__search {
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.new-message__search input {
+    padding: 1rem 0 1rem 2.5rem;
+    border: none;
+    background-color: #F5F7FB;
+    width: 100%;
+}
+
+.new-message__search input::placeholder {
+    color: #9597B4;
+}
+
+.new-message__search input:focus {
+    outline: none;
+}
+
+.new-message__search i {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9597B4;
+}
+
+.new-message__recent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+.new-message__recent-item:hover {
+    background-color: #F5F7FB;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.new-message__recent-title {
+    font-weight: bold;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.new-message__recent-item-wrapper {
+    display: flex;
+}
+
+.new-message__recent-item-details {
+    margin-left: 1rem;
+}
+
+.new-message__recent-item-details p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.new-message__recent-item-details p:nth-of-type(2) {
+    font-size: .79rem;
+}
+
+.new-message__recent-item-unchecked {
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+    border: 1px solid #9597B4;
+    background-color: #fff;
+}
+
+.new-message__recent-item-checked {
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+    background-color: #2D7FE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-message__recent-item-checked i {
+    font-size: .5rem;
+    color: #fff;
+}
