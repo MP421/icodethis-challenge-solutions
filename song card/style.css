@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+:root {
+    --body-bg: #F2F3FA;
+    --music-player-bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--body-bg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.music__player-current__song {
+    display: flex;
+    background-color: var(--music-player-bg);
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1rem 2rem 0 2rem;
+    color: #333;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.current__song-album__art {
+    max-height: 10rem;
+    max-width: 10rem;
+    border-radius: 1rem;
+    margin-bottom: -1.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.current__song-details {
+    padding: 1rem 1.5rem;
+}
+
+.current__song-details h3 {
+    font-size: 1.1rem;
+}
+
+.current__song-details p {
+    font-size: .9rem;
+    margin: .2rem 0 1rem;
+}
+
+.current__song-actions {
+    text-align: center;
+}
+
+i {
+    cursor: pointer;
+}
+
+.fa-repeat:hover,
+.fa-shuffle:hover {
+    color: #9e9e9e;
+}
+
+.fa-heart {
+    margin: 0 1rem;
+}
+
+.fa-heart:hover {
+    color: rgb(255, 107, 107);
+}
+
+.fa-arrow-left,
+.fa-pause,
+.fa-arrow-right {
+    color: #333;
+}
+
+.fa-arrow-left:hover,
+.fa-pause:hover,
+.fa-arrow-right:hover {
+    color: #7E9CFF;
+}
+
+.fa-pause {
+    margin: 0 .5rem;
+}
