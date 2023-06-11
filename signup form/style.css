@@ -1,0 +1,117 @@
+:root {
+    --main-bg-color: #F4F9FF;
+    --container-bg-color: #FFFFFF;
+    --fb-bg-color: #4968AD;
+    --primary-color: #1E2C4B;
+    --placeholder-color: #8F90A1;
+    --input-border-color: #DFE4F0;
+    --box-shadow: #dfe8f7;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px 18px var(--box-shadow);
+}
+
+.sub-title {
+    margin: 25px 0;
+    font-weight: bold;
+    opacity: .7;
+}
+
+.hr {
+    margin: 20px 0;
+    font-weight: bold;
+    opacity: .7;
+}
+
+input {
+    border: 3px solid var(--box-shadow);
+    border-radius: 5px;
+    padding: 15px;
+    opacity: .7;
+}
+
+input:hover {
+    background-color: var(--box-shadow);
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.email {
+    margin: 15px 0;
+}
+
+.j-w-fb,
+.c-n-a {
+    color: var(--container-bg-color);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 18px;
+    font-size: 12px;
+}
+
+.j-w-fb {
+    background-color: var(--fb-bg-color);
+}
+
+.j-w-fb:hover {
+    background-color: var(--container-bg-color);
+    color: var(--fb-bg-color);
+    border: 2px solid var(--fb-bg-color);
+    padding: 16px;
+}
+
+.c-n-a {
+    background-color: var(--primary-color);
+}
+
+.c-n-a:hover {
+    background-color: var(--container-bg-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 16px;
+}
+
+.foot-note {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: .7;
+}
