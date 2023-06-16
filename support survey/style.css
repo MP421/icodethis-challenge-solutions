@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --white-500: #FFF;
+    --white-400: #E7E9F8;
+    --white-300: #FCFBFF;
+    --white-200: #EAE8F3;
+    --black-500: #000000;
+    --black-400: #333333;
+    --blue-500: #666EFF;
+    --blue-400: #666eff80;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: var(--white-500);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.survey__subject h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    width: 60%;
+}
+
+.survey__subject p {
+    position: absolute;
+    top: -7%;
+    right: 0;
+    background-color: var(--white-500);
+    padding: .5rem 1.5rem 2rem 1.5rem;
+    color: var(--black-400);
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.survey__options {
+    margin: 3rem auto;
+    font-size: 1.1rem;
+}
+
+.survey__options p {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: var(--white-300);
+    color: var(--black-400);
+    width: 100%;
+    border: 1px solid var(--white-200);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.survey__options p:hover {
+    background-color: var(--blue-500);
+    color: var(--white-500);
+    transition: .1s ease;
+    border: 1px solid var(--blue-500);
+    box-shadow: 0px 5px 25px var(--blue-400);
+}
+
+.survey__options p:active {
+    transform: scale(98%);
+}
+
+.survey__submit {
+    text-align: center;
+    color: var(--blue-500);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    cursor: pointer;
+}
+
+.survey__submit:hover {
+    color: var(--blue-400);
+    transition: .1s ease;
+}
+
+.survey__submit:active {
+    transform: scale(95%);
+}
