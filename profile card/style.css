@@ -1,0 +1,162 @@
+:root {
+    --white-500: rgb(255, 255, 255);
+    --white-400: rgb(244, 247, 253);
+    --white-300: rgb(194, 198, 229);
+    --white-200: rgb(189, 189, 189);
+    --blue-600: rgb(221, 223, 253);
+    --blue-500: rgb(99, 103, 190);
+    --box-shadow: rgba(0, 0, 0, .1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white-400);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.container {
+    background-color: var(--white-500);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 410px;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px var(--box-shadow);
+    cursor: pointer;
+}
+
+.notifications i {
+    padding: .8rem 1rem;
+    color: var(--white-200);
+}
+
+.notifications i:hover {
+    color: var(--blue-600);
+    transition: .1s ease;
+}
+
+.notifications-vr {
+    width: 1px;
+    height: 25px;
+    background-color: var(--white-300);
+    opacity: .3;
+    margin: 0 .3rem;
+}
+
+.plus-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0px 0px 20px var(--box-shadow);
+    cursor: pointer;
+}
+
+.plus-one:hover {
+    background-color: var(--blue-600);
+    transition: .1s ease;
+}
+
+.user-bio {
+    margin: 2rem 0;
+}
+
+.user-bio-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.user-bio-details img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.user-bio-details-profile {
+    margin-left: 1rem;
+}
+
+.user-bio-details-profile p:nth-of-type(1) {
+    color: var(--blue-500);
+    font-weight: bold;
+}
+
+.user-bio-details-profile p:nth-of-type(2) {
+    font-size: .9rem;
+}
+
+.user-bio-metrics {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.user-bio-metrics-stats p:nth-of-type(1) {
+    opacity: .6;
+}
+
+.user-bio-metrics-stats p:nth-of-type(2) {
+    color: var(--blue-500);
+    font-weight: bold;
+}
+
+.profile-update {
+    background-color: var(--blue-600);
+    border-radius: 5px;
+    padding: 1rem;
+    position: relative;
+}
+
+.profile-update p:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.profile-update p:nth-of-type(2) {
+    font-size: .9rem;
+    max-width: 90%;
+}
+
+.profile-update a {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: var(--white-500);
+    color: var(--blue-500);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px var(--box-shadow);
+}
