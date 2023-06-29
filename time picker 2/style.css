@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --body-bg: #E2ECF4;
+    --title-bg: #F9FBFC;
+    --title-content: #535B7B;
+    --white-500: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: var(--white-500);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
+}
+
+.tp2-title {
+    background-color: var(--title-bg);
+    color: var(--title-content);
+    text-transform: uppercase;
+    font-size: .6rem;
+    padding: 1rem 8rem;
+}
+
+.tp2-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 3rem;
+}
+
+.tp2-input select {
+    padding: .5rem;
+    background-color: var(--body-bg);
+    border: 1px solid var(--title-content);
+    color: var(--title-content);
+    font-weight: 700;
+}
