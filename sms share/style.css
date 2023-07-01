@@ -1,0 +1,120 @@
+:root {
+    --body-bg: #F3F3F3;
+    --container-bg: #FFFFFF;
+    --button-bg: #4492F5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.container {
+    background-color: var(--container-bg);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .1);
+    position: relative;
+    width: 500px;
+}
+
+.sms-cancel {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.sms-send-link {
+    padding: 2rem;
+}
+
+.sms-desc {
+    width: 90%;
+}
+
+.sms-desc p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.sms-desc p:nth-of-type(2) {
+    font-size: .8rem;
+    margin: 1rem 0;
+    opacity: .7;
+}
+
+.sms-enter-mobile-number {
+    display: flex;
+}
+
+.sms-enter-mobile-number select {
+    background-color: var(--body-bg);
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding-left: .5rem;
+    color: var(--button-bg);
+    font-weight: bold;
+}
+
+.sms-enter-mobile-number select:focus {
+    outline: none;
+}
+
+.sms-enter-mobile-number input {
+    background-color: var(--body-bg);
+    padding: 1rem;
+    width: 50%;
+    border: none;
+}
+
+.sms-enter-mobile-number input:focus {
+    outline: none;
+}
+
+.sms-enter-mobile-number button {
+    background-color: var(--button-bg);
+    color: var(--container-bg);
+    font-weight: bold;
+    padding: .75rem 2rem;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.sms-share-link {
+    margin-top: 2rem;
+}
+
+.sms-share-link > p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .95rem;
+}
+
+.sms-share-link-clipboard {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    margin: .3rem 0 1rem;
+}
+
+.sms-share-link-clipboard p:nth-of-type(1) {
+    opacity: .7;
+}
+
+.sms-share-link-clipboard p:nth-of-type(2) {
+    color: var(--button-bg);
+    cursor: pointer;
+}
