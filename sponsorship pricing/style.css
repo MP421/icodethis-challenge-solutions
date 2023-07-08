@@ -1,0 +1,116 @@
+:root {
+    --white-400: #F3F5F7;
+    --white-500: #FFF;
+    --orange-400: #FFB14A;
+    --orange-500: #FFD148;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.25;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, var(--orange-400) 50%, var(--orange-500) 50%);
+}
+
+.container {
+    background-color: var(--white-400);
+    border-radius: 10px;
+    padding: 4rem;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .25);
+    width: 800px;
+}
+
+.sponsorship-heading p:nth-of-type(1) {
+    font-size: 1.5rem;
+}
+
+.sponsorship-heading p:nth-of-type(2) {
+    font-size: .65rem;
+    margin: .5rem 0 2rem;
+}
+
+.sponsorship-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsorship-select-item {
+    background-color: var(--white-500);
+    padding: 2.5rem 2rem 1rem 2rem;
+    border-radius: 10px;
+}
+
+.sponsorship-select-item-title {
+    text-align: center;
+}
+
+.sponsorship-select-item-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 1rem 0 3rem;
+}
+
+.sponsorship-select-item-price p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.sponsorship-select-item-price p:nth-of-type(2) {
+    font-size: .9rem;
+}
+
+.sponsorship-select-item-button,
+.sponsorship-select-item-button-list {
+    padding: .5rem 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sponsorship-select-item-button:hover,
+.sponsorship-select-item-button-list:hover {
+    color: var(--orange-500);
+    border: 1px solid var(--orange-500);
+    box-shadow: 0px 0px 5px var(--orange-400);
+    transition: .1s ease;
+}
+
+.sponsorship-select-item-button {
+    background-color: black;
+    color: var(--white-500);
+}
+
+.sponsorship-select-item-button-list {
+    background-color: var(--white-500);
+}
+
+.sponsorship-select-item-menu {
+    margin-top: 2rem;
+    font-size: .75rem;
+}
+
+.sponsorship-select-item-menu li {
+    list-style: none;
+}
+
+.sponsorship-select-item-menu li::before {
+  content: "\2022";
+  color: var(--orange-400);
+  font-size: .9rem;
+  font-weight: bold;
+  display: inline-block;
+  width: .75rem;
+}
